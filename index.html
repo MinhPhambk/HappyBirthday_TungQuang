@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Happy Birthday</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Loader Section -->
+    <div class="container">
+        <div class="row">
+            <div class="loader">
+                <button id="play">Chờ tý 12h hẵng bấm nhá</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Section -->
+    <audio class="song" controls loop>
+        <source src="music.mp3">
+        Your browser isn't invited for super fun audio time.
+    </audio>
+
+    <!-- Confetti Canvas -->
+    <canvas id="confetti"></canvas>
+
+    <!-- Main Section -->
+    <div class="main">
+        <div class="container pt-5">
+            <div class="row">
+
+                <!-- Banner Image -->
+                <div class="col-12 col-xl-6 mx-auto">
+                    <img src="img/banner.png" alt="Banner Image">
+                </div>
+
+                <!-- User Image -->
+                <div class="col-12 col-xl-6 mx-auto text-center user-img">
+                    <img src="img/user.png" alt="User Image">
+                </div>
+
+                <!-- Name Section -->
+                <div class="col-12 text-center">
+                    <div id="name" class="area">Tùng Quang</div>
+                </div>
+
+                <!-- Cake Image -->
+                <div class="col-12 col-xl-3 text-center cake">
+                    <img src="img/cake.gif" alt="Cake Image">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Balloon Border Image -->
+        <img src="img/Balloon-Border.png" width="100%" class="balloon-border" alt="Balloon Border">
+    </div>
+
+    <!-- Birthday Card Section -->
+    <div class="birthdaycard">
+
+        <!-- Front of the Card -->
+        <div class="cardfront">
+            <h3 class="happy">Happy Birthday!</h3>
+
+            <div class="balloons">
+                <div class="balloon1"></div>
+                <div class="balloon2"></div>
+                <div class="balloon3"></div>
+                <div class="balloon4"></div>
+            </div><!-- end balloons -->
+        </div><!-- end cardfront -->
+
+        <!-- Inside of the Card -->
+        <div class="cardinside">
+            <h3 class="back">Sinh nhật zui :></h3>
+            <p>Chào Tùng,</p>
+            <p>Tuổi mới yêu đời và yêu bạn nhiều hơn nhé =))</p>
+            <p class="name">Kokomi</p>
+        </div><!-- end cardinside -->
+
+    </div><!-- end birthdaycard -->
+
+</body>
+
+<!-- External Scripts -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>

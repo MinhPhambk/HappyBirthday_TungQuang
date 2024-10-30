@@ -1,0 +1,348 @@
+/* customizable snowflake styling */
+.loader button {
+    width: 50%;
+    height: 100px;
+    position: fixed;
+    left: 50%;
+    top: 45%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    background: center no-repeat #fff;
+    z-index: 9999999999999999999999;
+    font-size: 50px;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+    border-radius: .3em;
+    text-transform: uppercase;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(110, 80, 20, .4),
+        inset 0 -2px 5px 1px rgba(139, 66, 8, 1),
+        inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+    border: 1px solid #a55d07;
+    color: rgb(120, 50, 5);
+    text-shadow: 0 2px 2px rgba(250, 227, 133, 1);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.golden-btn:focus,
+.golden-btn:hover {
+    background-size: 150% 150%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23),
+        inset 0 -2px 5px 1px #b17d10,
+        inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+    border: 1px solid rgba(165, 93, 7, .6);
+    color: rgba(120, 50, 5, .8);
+}
+
+.golden-btn:active {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(110, 80, 20, .4),
+        inset 0 -2px 5px 1px #b17d10,
+        inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+}
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: url(img/back.png) center no-repeat #000;
+}
+
+.song {
+    display: none;
+}
+
+body {
+    background-color: #FFDAB9;
+}
+
+img {
+    width: 100%;
+}
+
+.balloon-border {
+    position: fixed;
+    top: 100%;
+    opacity: 0.5;
+    z-index: 99999999;
+}
+
+.area {
+    text-align: center;
+    font-size: 70px;
+    color: #C4515C;
+    letter-spacing: -7px;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation: spin 2s ease-out infinite;
+    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+
+#nae {
+    text-transform: capitalize;
+}
+
+#confetti {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateZ(0);
+    }
+
+    25% {
+        transform: rotateZ(10deg);
+    }
+
+    50% {
+        transform: rotateZ(0deg);
+    }
+
+    75% {
+        transform: rotateZ(-10deg);
+    }
+}
+
+.type-wrap {
+    font-size: 25px;
+    color: #C4515C;
+
+}
+
+.cake {
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    padding-top: 250px;
+    margin-top: 300px;
+}
+
+.image-container {
+      margin-top: 0px; 
+       height: 60px;
+	width: 100px;
+	
+    }
+
+img {
+      max-width: 100%;
+      height: auto;
+	animation: multiGlow 70s infinite;
+    }
+    
+
+
+.birthdaycard {
+    margin-top: -200px;
+	position: relative;
+	width: 250px;
+	height: 350px;
+	cursor: pointer;
+	transform-style: preserve-3d;
+	transform: perspective(2500px);
+	transition: 1s;
+	align-items: center;
+	display: flex;
+	}
+
+.birthdaycard:hover {
+	transform: perspective(2500px) rotate(5deg);
+	box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2), 0 10px 100px rgba(0,0,0,0.4);
+	}
+
+.birthdaycard:hover .cardfront {
+	transform: rotateY(-160deg);
+	}
+
+.birthdaycard:hover .happy {
+	visibility: hidden;
+	}
+
+.cardfront {
+	position: relative;
+	background-color: #ffffff;
+	width: 250px;
+	height: 350px;
+	overflow: hidden;
+	transform-origin: left;
+	box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2), 30px 0 50px rgba(0,0,0,0.4);
+	transition: 0.6s;
+	}
+
+.happy {
+	font-family: Tahoma, sans-serif;
+	text-align: center;
+	margin: 30px;
+	background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+	transition: 0.1s;
+	}
+
+.balloons {
+	position: absolute;
+	}
+
+.balloon1, .balloon2, .balloon3, .balloon4 {
+	position: absolute;
+	width: 85px;
+	height: 95px;
+	border-radius: 50%;
+	}
+
+.balloon1 {
+	background-color: rgba(239, 71, 111, 0.7);
+	left: -10px;
+	top: 50px;
+	}
+
+.balloon2 {
+	background-color: rgba(6, 214, 160, 0.7);
+	left: 50px;
+	top: 20px;
+	}
+
+.balloon3 {
+	background-color: rgba(255, 209, 102, 0.7);
+	left: 110px;
+	top: 50px;
+	}
+
+.balloon4 {
+	background-color: rgba(17, 138, 178, 0.7);
+	left: 170px;
+	top: 20px;
+	}
+
+.balloon1:before, .balloon2:before, .balloon3:before, .balloon4:before {
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 155px;
+	background-color: #ffd166;
+	top: 95px;
+	left: 43px;
+	}
+
+.balloon1:after, .balloon2:after, .balloon3:after, .balloon4:after {
+	content: "";
+	position: absolute;
+	border-right: 7px solid transparent;
+	border-left: 7px solid transparent;
+	top: 94px;
+	left: 37px;
+	}
+
+.balloon1:after {
+	border-bottom: 10px solid #ef476f;
+	}
+
+.balloon2:after {
+	border-bottom: 10px solid #06d6a0;
+	}
+
+.balloon3:after {
+	border-bottom: 10px solid #ffd166;
+	}
+
+.balloon4:after {
+	border-bottom: 10px solid #118ab2;
+	}
+
+.cardinside {
+	position: absolute;
+	background-color: #fff;
+	top: -1000;
+	left: 0;
+	width: 250px;
+	height: 350px;
+	box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2);
+	z-index: -1;
+	}
+
+p {
+	font-family: 'Brush Script MT', cursive;
+	margin: 20px;
+	color: #333;
+	}
+
+.name {
+	position: absolute;
+	left: 120px;
+	top: 220px;
+	color: #333;
+	}
+
+.back {
+	font-family: Tahoma, sans-serif;
+	color: #333;
+	text-align: center;
+	margin: 30px;
+	outline-color: #333;
+	outline-style: dotted;
+	}
+
+
+@keyframes multiGlow {
+    0% {
+        filter: drop-shadow(0 0 2rem cyan);
+    }
+    6.25% {
+        filter: drop-shadow(0 0 2rem magenta);
+    }
+    12.5% {
+        filter: drop-shadow(0 0 2rem yellow);
+    }
+    18.75% {
+        filter: drop-shadow(0 0 2rem lime);
+    }
+    25% {
+        filter: drop-shadow(0 0 2rem red);
+    }
+    31.25% {
+        filter: drop-shadow(0 0 2rem blue);
+    }
+    37.5% {
+        filter: drop-shadow(0 0 2rem orange);
+    }
+    43.75% {
+        filter: drop-shadow(0 0 2rem purple);
+    }
+    50% {
+        filter: drop-shadow(0 0 2rem pink);
+    }
+    56.25% {
+        filter: drop-shadow(0 0 2rem lightblue);
+    }
+    62.5% {
+        filter: drop-shadow(0 0 2rem lightgreen);
+    }
+    68.75% {
+        filter: drop-shadow(0 0 2rem gold);
+    }
+    75% {
+        filter: drop-shadow(0 0 2rem coral);
+    }
+    81.25% {
+        filter: drop-shadow(0 0 2rem turquoise);
+    }
+    87.5% {
+        filter: drop-shadow(0 0 2rem violet);
+    }
+    93.75% {
+        filter: drop-shadow(0 0 2rem chartreuse);
+    }
+    100% {
+        filter: drop-shadow(0 0 2rem cyan);
+    }
+}
